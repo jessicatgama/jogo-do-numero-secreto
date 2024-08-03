@@ -6,13 +6,12 @@ let tentativas = 1;
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, "Brazilian Portuguese Female", {rate:1.2}); //Voz que lê o que tá escrito na tela (possivel devido a linha 7 do HTML)
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2}); //Voz que lê o que tá escrito na tela (possivel devido a linha 7 do HTML)
 }
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
     exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
-
 }
 
 exibirMensagemInicial();
